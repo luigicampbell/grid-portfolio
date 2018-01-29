@@ -7,7 +7,7 @@
     text-shadow: 3px 5px 5px #424242;
     font-family: sans-serif;
     font-weight: 200;
-    border-radius: 3%;
+    border-radius: 5px;
 }
 .container > div > img {
     width: 100%;
@@ -40,7 +40,7 @@ html, body {
   width: 150%;
   height: 150%;
   z-index: 99;
-  border-radius: 3%
+  border-radius: 5px;
 }
 .container {
     display: grid;
