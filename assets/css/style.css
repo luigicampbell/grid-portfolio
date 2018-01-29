@@ -1,0 +1,63 @@
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #fafafa;
+    text-shadow: 3px 5px 5px #424242;
+    font-family: sans-serif;
+    font-weight: 200;
+    border-radius: 3%;
+}
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+html, body {
+    background-color: #ff9e80;
+    margin: 5px;
+}
+.container>div:nth-child(n){
+  background-color: #00796b;
+  box-shadow: 1px 6px 5px #212121;
+}
+.container>div:nth-child(2n){
+  background-color: #448aff;
+  box-shadow: 3px 2px 7px #212121;
+}
+.container>div:nth-child(3n){
+  background-color: #03a9f4;
+  box-shadow: 2px 1px 5px #212121;
+}
+.container>div:nth-child(4n){
+  background-color: #00e676;
+  box-shadow: 1px 2px 9px #212121;
+}
+.container>div:hover{
+  box-shadow: 10px 20px 70px #212121;
+  width: 150%;
+  height: 150%;
+  z-index: 99;
+  border-radius: 3%
+}
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 275px;
+    grid-auto-flow: dense;
+}
+.horizontal {
+  grid-column: span 2;
+}
+
+.vertical {
+  grid-row: span 2;
+}
+
+.big {
+  grid-row: span 2;
+  grid-column: span 2;
+}
