@@ -1,53 +1,117 @@
+*{
+  font-size: 1em;
+  color: #fafafa;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.overlay{
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
 .container > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-    color: #fafafa;
-    text-shadow: 3px 5px 5px #424242;
-    font-family: sans-serif;
-    font-weight: 200;
-    border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
 }
 .container > div > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
+span:before, span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  margin-top: -325.5px;
+  background: #fff;
+}
+span:before {
+  left: -2.5px;
+}
+span:after {
+  right: 2.5px;
+  background: #fff;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+span:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
 html, body {
-    background-color: #ff9e80;
-    margin: 5px;
+  background-color: #424242;
+  margin: 1px;
 }
 .container>div:nth-child(n){
   background-color: #00796b;
-  box-shadow: 1px 6px 5px #212121;
+  box-shadow: 1px 1px 1px 1px #3e2723;
 }
 .container>div:nth-child(2n){
   background-color: #448aff;
-  box-shadow: 3px 2px 7px #212121;
+  box-shadow: 2px 2px 2px 1px #3e2723;
 }
 .container>div:nth-child(3n){
   background-color: #03a9f4;
-  box-shadow: 2px 1px 5px #212121;
+  box-shadow: 2px 1px 1px 1px #3e2723;
 }
 .container>div:nth-child(4n){
   background-color: #00e676;
-  box-shadow: 1px 2px 9px #212121;
+  box-shadow: 2px 2px 2px 1px #3e2723;
 }
-.container>div:hover{
-  box-shadow: 10px 20px 70px #212121;
-  width: 150%;
-  height: 150%;
-  z-index: 99;
-  border-radius: 5px;
-}
+/* .container>div:hover{
+box-shadow: 10px 20px 70px #212121;
+width: 150%;
+height: 150%;
+z-index: 99;
+border-radius: 5px;
+} */
 .container {
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-auto-rows: 275px;
-    grid-auto-flow: dense;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 275px;
+  grid-auto-flow: dense;
 }
 .horizontal {
   grid-column: span 2;
@@ -60,4 +124,13 @@ html, body {
 .big {
   grid-row: span 2;
   grid-column: span 2;
+}
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
 }
