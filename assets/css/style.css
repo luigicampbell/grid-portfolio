@@ -33,6 +33,7 @@
 }
 .open .line-menu.start {
   transform: rotate(-90deg) translateX(3px);
+  z-index: 99;
 }
 
 .line-menu.end {
@@ -42,11 +43,21 @@
 }
 .open .line-menu.end {
   transform: rotate(-90deg) translateX(-3px);
+  z-index: 99;
 }
 #more{
-  grid-column: 1 / 1;
+  z-index: 3;
+  position: absolute;
+  top: 28px;
+  right: 53px;
+  text-shadow: 1px 1px 1px #3e2723;
+}
+.current-page{
+  font-size: 2em;
   text-align: center;
-  padding: 20px;
+  text-shadow: 1px 1px 10px #3e2723;
+  position: relative;
+  padding: 65px;
 }
 .overlay{
   height: 0%;
@@ -61,22 +72,22 @@
   transition: 0.5s;
 }
 .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
 }
 .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 /* .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
+color: #f1f1f1;
 } */
 .overlay a:before, .overlay a:after{
   content: '';
@@ -89,10 +100,10 @@
   text-shadow: 1px 1px #3e2723;
 }
 .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 .container > div {
   display: flex;
@@ -118,39 +129,25 @@ span:before, span:after {
 span:before {
   left: -2.5px;
 }
-.overlay a:before{
-  left: -2.5px;
-}
+
 span:after {
   right: 2.5px;
   background: #fff;
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
-.overlay a:after{
-  right: 2.5px;
-  background: #fff;
-  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
+
 span:hover:before {
   background: #fff;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
-.overlay a:hover:before{
-  background: #fff;
-  width: 100%;
-  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
+
 span:hover:after {
   background: transparent;
   width: 100%;
   transition: 0s;
 }
-.overlay:hover:after{
-  background: transparent;
-  width: 100%;
-  transition: 0s;
-}
+
 html, body {
   background-color: #424242;
   margin: 1px;
@@ -171,13 +168,6 @@ html, body {
   background-color: #00e676;
   box-shadow: 2px 2px 2px 1px #3e2723;
 }
-/* .container>div:hover{
-box-shadow: 10px 20px 70px #212121;
-width: 150%;
-height: 150%;
-z-index: 99;
-border-radius: 5px;
-} */
 .container {
   display: grid;
   margin: 10px;
