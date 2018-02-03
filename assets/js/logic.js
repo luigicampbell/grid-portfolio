@@ -1,17 +1,23 @@
 let wrapperMenu = document.querySelector('.wrapper-menu');
 
-let x = document.getElementById('navbar').style.height;
-console.log(x);
+let x = '0%';
+
 function openNav() {
-  x = '100%';
-  console.log(`opened ${x}`);
+  document.getElementById('navbar').style.height = '100%';
+
   wrapperMenu.classList.toggle('open');
+  x = document.getElementById('navbar').style.height;
+  console.log(`opened ${x}`);
 }
 
 function closeNav() {
+  document.getElementById('navbar').style.height = '0%';
+  x = document.getElementById('navbar').style.height;
   console.log(`closed ${x}`);
   wrapperMenu.classList.toggle('open');
 }
+
+
 
 function toggleOverlay(){
   if (x === '0%'){
