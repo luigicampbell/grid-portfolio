@@ -1,4 +1,4 @@
-*{
+* {
   font-size: 1em;
   color: #fafafa;
   font-family: 'Roboto Condensed', sans-serif;
@@ -45,24 +45,21 @@
   transform: rotate(-90deg) translateX(-3px);
   z-index: 99;
 }
-#burger{
+#burger {
   z-index: 99;
   position: absolute;
   top: 28px;
   right: 53px;
   text-shadow: 1px 1px 1px #3e2723;
 }
-.closer{
-
-}
-.current-page{
+.current-page {
   font-size: 2em;
   text-align: center;
   text-shadow: 1px 1px 10px #3e2723;
   position: relative;
   padding: 40px;
 }
-.overlay{
+.overlay {
   height: 0%;
   width: 100%;
   position: fixed;
@@ -89,9 +86,6 @@
   display: block;
   transition: 0.3s;
 }
-.overlay a:hover, .overlay a:focus {
-color: #f1f1f1;
-}
 .overlay a:before, .overlay a:after{
   content: '';
   position: absolute;
@@ -101,12 +95,6 @@ color: #f1f1f1;
   margin-top: -85.5px;
   background: #fff;
   text-shadow: 1px 1px #3e2723;
-}
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
 }
 .container > div {
   display: flex;
@@ -119,33 +107,33 @@ color: #f1f1f1;
   height: 100%;
   object-fit: cover;
 }
-span:before, span:after {
+a:before, a:after {
   content: '';
   position: absolute;
   width: 0%;
   height: 1px;
   top: 50%;
-  margin-top: -325.5px;
+  margin-top: -25.5px;
   background: #fff;
   text-shadow: 1px 1px #3e2723;
 }
-span:before {
+a:before {
   left: -2.5px;
 }
 
-span:after {
+a:after {
   right: 2.5px;
   background: #fff;
   transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-span:hover:before {
+a:hover:before {
   background: #fff;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-span:hover:after {
+a:hover:after {
   background: transparent;
   width: 100%;
   transition: 0s;
@@ -194,9 +182,4 @@ html, body {
 @media screen and (max-height: 450px) {
   .overlay {overflow-y: auto;}
   .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
 }
