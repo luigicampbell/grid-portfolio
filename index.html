@@ -8,20 +8,15 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 </head>
 <body>
+
   <!-- Navbar-->
-  <div id="more" style="font-size:30px;cursor:pointer" onclick="openNav()"><div class="wrapper-menu">
+  <div id="burger" onclick="toggleOverlay()" style="font-size:30px;cursor:pointer;" class="wrapper-menu">
     <div class="line-menu half start"></div>
     <div class="line-menu"></div>
     <div class="line-menu half end"></div>
   </div>
-</div>
 
 <div id="navbar" class="overlay" style="height: 0%">
-  <a href="javascript:void(0)" onclick="closeNav()"><div class="wrapper-menu">
-    <div class="line-menu half start"></div>
-    <div class="line-menu"></div>
-    <div class="line-menu half end"></div>
-  </div></a>
   <div class="overlay-content">
     <a href="index.html"><span>Home</span></a>
     <a href="coverletter.html"><span>About</span></a>
@@ -29,9 +24,14 @@
     <a href="contact.html"><span>Contact</span></a>
   </div>
 </div>
+<div class="current-page">Home</div>
 
-<!-- Boxes -->
+<!-- Wrapper -->
+<div class="container">
 
+  <!-- Boxes -->
+  
+</div>
 <!-- JS -->
 <script src="assets/js/logic.js"></script>
 </body>
