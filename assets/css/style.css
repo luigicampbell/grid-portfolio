@@ -45,12 +45,15 @@
   transform: rotate(-90deg) translateX(-3px);
   z-index: 99;
 }
-#more{
-  z-index: 3;
+#burger{
+  z-index: 99;
   position: absolute;
   top: 28px;
   right: 53px;
   text-shadow: 1px 1px 1px #3e2723;
+}
+.closer{
+
 }
 .current-page{
   font-size: 2em;
@@ -63,7 +66,7 @@
   height: 0%;
   width: 100%;
   position: fixed;
-  z-index: 99;
+  z-index: 98;
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);
@@ -86,9 +89,9 @@
   display: block;
   transition: 0.3s;
 }
-/* .overlay a:hover, .overlay a:focus {
+.overlay a:hover, .overlay a:focus {
 color: #f1f1f1;
-} */
+}
 .overlay a:before, .overlay a:after{
   content: '';
   position: absolute;

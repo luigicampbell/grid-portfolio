@@ -1,10 +1,25 @@
 let wrapperMenu = document.querySelector('.wrapper-menu');
+
+let x = document.getElementById('navbar').style.height;
+console.log(x);
 function openNav() {
-    document.getElementById("navbar").style.height = "100%";
-    wrapperMenu.classList.toggle('open');
+  x = '100%';
+  console.log(`opened ${x}`);
+  wrapperMenu.classList.toggle('open');
 }
 
 function closeNav() {
-    document.getElementById("navbar").style.height = "0%";
-    wrapperMenu.classList.toggle('open');
+  console.log(`closed ${x}`);
+  wrapperMenu.classList.toggle('open');
+}
+
+function toggleOverlay(){
+  if (x === '0%'){
+    console.log(`x should be 0%: ${x}`);
+    openNav();
+  }
+  else if (x === '100%'){
+    console.log(`x should be 100%: ${x}`);
+    closeNav();
+  }
 }

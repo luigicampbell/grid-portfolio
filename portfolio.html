@@ -10,15 +10,13 @@
 <body>
 
   <!-- Navbar-->
-  <div id="more" style="font-size:30px;cursor:pointer" onclick="openNav()"><div class="wrapper-menu">
+  <div id="burger" onclick="toggleOverlay()" style="font-size:30px;cursor:pointer;" class="wrapper-menu">
     <div class="line-menu half start"></div>
     <div class="line-menu"></div>
     <div class="line-menu half end"></div>
   </div>
-</div>
 
-<div id="navbar" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+<div id="navbar" class="overlay" style="height: 0%">
   <div class="overlay-content">
     <a href="index.html"><span>Home</span></a>
     <a href="coverletter.html"><span>About</span></a>
