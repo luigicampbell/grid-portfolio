@@ -7,6 +7,11 @@
   text-shadow: 1px 1px #3e2723;
   text-decoration: none;
 }
+p{
+  margin: 15px;
+  text-align: justify;
+  text-overflow: ellipsis;
+}
 .wrapper-menu {
   width: 50px;
   height: 50px;
