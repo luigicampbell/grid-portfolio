@@ -5,6 +5,7 @@
   text-transform: uppercase;
   letter-spacing: 5px;
   text-shadow: 1px 1px #3e2723;
+  text-decoration: none;
 }
 .wrapper-menu {
   width: 50px;
@@ -86,16 +87,6 @@
   display: block;
   transition: 0.3s;
 }
-.overlay a:before, .overlay a:after{
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 1px;
-  top: 50%;
-  margin-top: -85.5px;
-  background: #fff;
-  text-shadow: 1px 1px #3e2723;
-}
 .container > div {
   display: flex;
   justify-content: center;
@@ -107,38 +98,6 @@
   height: 100%;
   object-fit: cover;
 }
-a:before, a:after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 1px;
-  top: 50%;
-  margin-top: -25.5px;
-  background: #fff;
-  text-shadow: 1px 1px #3e2723;
-}
-a:before {
-  left: -2.5px;
-}
-
-a:after {
-  right: 2.5px;
-  background: #fff;
-  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-a:hover:before {
-  background: #fff;
-  width: 100%;
-  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-a:hover:after {
-  background: transparent;
-  width: 100%;
-  transition: 0s;
-}
-
 html, body {
   background-color: #424242;
   margin: 1px;
@@ -179,7 +138,37 @@ html, body {
   grid-row: span 2;
   grid-column: span 2;
 }
-@media screen and (max-height: 450px) {
-  .overlay {overflow-y: auto;}
-  .overlay a {font-size: 20px}
+ a span {
+  &::before,
+  &::after {
+    content: '';
+    background: white;
+    position: absolute;
+    top: 50%;
+    height: 1px;
+    width: 0;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  &:hover {
+    color: #fff;
+    &::before {
+      width: 100%;
+      transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+
+    &::after {
+      width: 100%;
+      background: transparent;
+      transition: 0;
+    }
+  }
 }
