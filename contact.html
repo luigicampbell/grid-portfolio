@@ -16,20 +16,43 @@
     <div class="line-menu half end"></div>
   </div>
 
-<div id="navbar" class="overlay" style="height: 0%">
-  <div class="overlay-content">
-    <a href="index.html">Home</a>
-    <a href="coverletter.html">About</a>
-    <a href="portfolio.html">Portfolio</a>
+  <div id="navbar" class="overlay" style="height: 0%">
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="coverletter.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+    </div>
   </div>
+  <div class="current-page">Contact</div>
+
+  <!-- Wrapper -->
+  <h3>Contact Form</h3>
+  <div class="container">
+
+    <!-- Boxes -->
+  <div class="big">
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
 </div>
-<div class="current-page">Contact</div>
-
-<!-- Wrapper -->
-<div class="container">
-
-  <!-- Boxes -->
-  </div>
 <!-- JS -->
 <script src="assets/js/logic.js"></script>
 </body>
