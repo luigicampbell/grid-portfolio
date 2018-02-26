@@ -149,6 +149,10 @@ html, body {
   grid-row: span 2;
   grid-column: span 2;
 }
+.coverletter{
+  grid-row: span 4;
+  grid-column: span 4;
+}
 input[type=text], select, textarea {
     width: 95%;
     padding: 12px;
@@ -177,7 +181,21 @@ input[type=submit]:hover {
 label{
   margin: 10px;
 }
- a span {
+a:hover {
+  color: #fff;
+  text-decoration: line-through;
+  /* &::before {
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  &::after {
+    width: 100%;
+    background: transparent;
+    transition: 0;
+  } */
+}
+ /* a span {
   &::before,
   &::after {
     content: '';
@@ -210,4 +228,4 @@ label{
       transition: 0;
     }
   }
-}
+} */
