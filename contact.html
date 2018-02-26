@@ -18,9 +18,9 @@
 
   <div id="navbar" class="overlay" style="height: 0%">
     <div class="overlay-content">
-      <a href="index.html">Home</a>
-      <a href="coverletter.html">About</a>
-      <a href="portfolio.html">Portfolio</a>
+      <a href="index.html"><span>Home</span></a>
+      <a href="coverletter.html"><span>About</span></a>
+      <a href="portfolio.html"><span>Portfolio</span></a>
     </div>
   </div>
   <div class="current-page">Contact</div>
@@ -30,25 +30,25 @@
   <div class="container">
 
     <!-- Boxes -->
-  <div class="big">
+  <div id="email">
     <form action="/action_page.php">
       <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <input style="color:#666" type="text" id="fname" name="firstname" placeholder="Your first name...">
 
       <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <input style="color:#666" type="text" id="lname" name="lastname" placeholder="Your last name...">
 
       <label for="country">Country</label>
-      <select id="country" name="country">
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
+      <select id="country" name="country" style="color:#666">
         <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="australia">Australia</option>
       </select>
 
       <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <textarea id="subject" name="subject" placeholder="Inquiry..." style="height:200px; color:#666; text-transform:none"></textarea>
 
-      <input type="submit" value="Submit">
+      <input type="submit" value="Send">
     </form>
   </div>
 

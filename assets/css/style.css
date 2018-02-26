@@ -1,11 +1,12 @@
 * {
-  font-size: 1em;
+  font-size: 1.2em;
   color: #fafafa;
   font-family: 'Roboto Condensed', sans-serif;
   text-transform: uppercase;
   letter-spacing: 5px;
   text-shadow: 1px 1px #3e2723;
   text-decoration: none;
+  text-align: center;
 }
 p{
   margin: 15px;
@@ -98,11 +99,25 @@ p{
   align-items: center;
   border-radius: 20px;
 }
+.banner{
+  grid-row: span 2;
+  grid-column: span 3;
+  margin: 10px;
+}
 .profile{
   object-fit: cover;
   width: 100%;
-  height: 350%;
+  height: 200%;
   box-shadow: 11px 11px 11px 11px #666;
+  grid-row: span 4;
+  grid-column: span 3;
+  text-align: justify;
+}
+.profile > p{
+  margin: 25px;
+}
+.banner > p > img{
+  width: 85%;
 }
 .container > div > img {
   width: 100%;
@@ -149,9 +164,36 @@ html, body {
   grid-row: span 2;
   grid-column: span 2;
 }
-.coverletter{
+#email{
   grid-row: span 4;
   grid-column: span 4;
+  background-color: #01579b;
+}
+.networking{
+  max-height: 100px;
+  max-width: 100px;
+  box-shadow: 3px 7px 4px #000000;
+  background-color: #ef9a9a;
+  margin: 5px;
+  border-radius: 100px;
+}
+.networking:hover{
+
+  box-shadow: 0px 0px 5px 0px #3e2723;
+  background-color: #ffcdd2;
+}
+.coverletter{
+  grid-row: span 2;
+  grid-column: span 3;
+  text-align: justify;
+  margin-bottom: 25px;
+
+}
+.coverletter > p{
+  font-size: .5em;
+  margin: 20px;
+  text-overflow: ellipsis;
+  object-fit: cover;
 }
 input[type=text], select, textarea {
     width: 95%;
@@ -166,17 +208,20 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-    background-color: #2196f3;
+    background-color: #00b0ff;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     margin: 10px;
+    box-shadow: 0px 2px 20px 3px #3e2723;
 }
 
 input[type=submit]:hover {
-    background-color: #64ffda;
+    background-color: #0277bd;
+    box-shadow: 0px 0px 5px 0px #3e2723;
+
 }
 label{
   margin: 10px;
