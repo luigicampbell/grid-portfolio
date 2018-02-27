@@ -134,19 +134,19 @@ html, body {
   margin: 1px;
 }
 .container>div:nth-child(n){
-  background-color: #00796b;
+  background-color: #448aff;
   box-shadow: 1px 1px 1px 1px #3e2723;
 }
 .container>div:nth-child(2n){
-  background-color: #448aff;
+  background-color: #03a9f4;
   box-shadow: 2px 2px 2px 1px #3e2723;
 }
 .container>div:nth-child(3n){
-  background-color: #03a9f4;
+  background-color: #00e676;
   box-shadow: 2px 1px 1px 1px #3e2723;
 }
 .container>div:nth-child(4n){
-  background-color: #00e676;
+  background-color: #00796b;
   box-shadow: 2px 2px 2px 1px #3e2723;
 }
 .container {
