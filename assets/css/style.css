@@ -113,7 +113,7 @@ p{
   object-fit: cover;
   width: 100%;
   height: 200%;
-  box-shadow: 11px 11px 11px 11px #666;
+  box-shadow: 1px 1px 100px 1px #666;
   grid-row: span 4;
   grid-column: span 3;
   text-align: justify;
@@ -135,19 +135,19 @@ html, body {
 }
 .container>div:nth-child(n){
   background-color: #448aff;
-  box-shadow: 1px 1px 1px 1px #3e2723;
+  box-shadow: 1px 1px 10px 1px #3e2723;
 }
 .container>div:nth-child(2n){
   background-color: #ff9800;
-  box-shadow: 2px 2px 2px 1px #3e2723;
+  box-shadow: 1px 1px 10px 1px #3e2723;
 }
 .container>div:nth-child(3n){
   background-color: #00e676;
-  box-shadow: 2px 1px 1px 1px #3e2723;
+  box-shadow: 1px 1px 10px 1px #3e2723;
 }
 .container>div:nth-child(4n){
   background-color: #00796b;
-  box-shadow: 2px 2px 2px 1px #3e2723;
+  box-shadow: 1px 1px 10px 1px #3e2723;
 }
 .container {
   display: grid;
