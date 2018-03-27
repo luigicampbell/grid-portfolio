@@ -111,12 +111,9 @@
   }
   .profile{
     object-fit: cover;
-    width: 5%;
-    height: 7%;
     box-shadow: 1px 1px 100px 1px #666;
-    grid-row: span 4;
-    grid-column: span 3;
     text-align: justify;
+    border-radius: 20px;
   }
   .banner > p > img{
     width: 85%;
