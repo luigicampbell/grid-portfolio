@@ -101,12 +101,12 @@
   }
   .banner{
     grid-row: span 1;
-    grid-column: span 3;
+    grid-column: 1 / -1;
     margin: 10px;
   }
   .headlineBanner{
     grid-row: span 3;
-    grid-column: span 3;
+    grid-column: 1 / -1;
     margin: 10px;
   }
   .profile{
@@ -183,7 +183,7 @@
   }
   .coverletter{
     grid-row: span 2;
-    grid-column: span 3;
+    grid-column: 1/ -1;
     text-align: justify;
     margin-bottom: 25px;
 
