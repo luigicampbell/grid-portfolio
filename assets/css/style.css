@@ -105,15 +105,19 @@
     margin: 10px;
   }
   .headlineBanner{
-    grid-row: span 3;
+    grid-row: 5 / -1;
     grid-column: 1 / -1;
     margin: 10px;
   }
+  img{
+    width: 100%;
+    grid-row: 1 / 4;
+  }
   .profile{
-    object-fit: cover;
-    box-shadow: 1px 1px 100px 1px #666;
+    box-shadow: 1px 1px 10px 1px #212121;
     text-align: justify;
-    border-radius: 20px;
+    margin-top: auto;
+    grid-column: 1 / -1
   }
   .banner > p > img{
     width: 85%;
